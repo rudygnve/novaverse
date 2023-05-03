@@ -4,7 +4,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 
 const MenuList = () => {
   return (
-    <div className="py-[30px] mb-[20px] w-full flex hidden lg:flex justify-center">
+    <div className="py-[15px] mb-[20px] w-full flex hidden lg:flex justify-center">
       <ul className="flex flex-row gap-10 items-center">
         <li className="menuListItem">
           <Link className="text-slate-500 font-semibold text-lg" href="#">

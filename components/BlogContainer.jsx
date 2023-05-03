@@ -4,9 +4,9 @@ import PostCard from "./PostCard";
 
 const BlogContainer = () => {
   return (
-    <div className="w-100 lg:w-[70%]">
+    <div className="w-full">
       <div className="w-full flex flex-col gap-[50px]">
-        {data.map((item) => (
+        {data.slice(0, 4).map((item) => (
           <PostCard item={item} />
         ))}
       </div>

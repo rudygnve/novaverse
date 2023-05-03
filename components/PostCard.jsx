@@ -7,11 +7,11 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 
 const PostCard = ({ item }) => {
   return (
-    <div>
+    <div className="">
       <div className="flex gap-4 flex-col w-full text-center">
         <Link
           className="flex flex-1 relative w-full h-[250px] overflow-hidden rounded-[20px] shadow-2xl lg:h-[500px]"
-          href="/"
+          href={`/blog/${item.slug}`}
         >
           <img
             title={item.title}
@@ -67,7 +67,7 @@ const PostCard = ({ item }) => {
               </Link>
             ))}
           </div>
-          <Link className="flex flex-1" href="/">
+          <Link className="flex flex-1" href={`/blog/${item.slug}`}>
             <h2
               title={item.title}
               className=" text-2xl text-slate-800 font-semibold transiton duration-200 hover:text-[#f92a40] lg:text-3xl"
@@ -102,13 +102,13 @@ const PostCard = ({ item }) => {
           <p className="text-base text-slate-600">
             {item.content.substring(0, 150)}...
           </p>
-          <Link
+          {/* <Link
             title={item.title}
             className="py-2 px-7 mt-3 text-white transition duration-200 rounded-3xl bg-slate-800 shadow-xl hover:bg-[#F92A40]"
             href="#"
           >
             Read More
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

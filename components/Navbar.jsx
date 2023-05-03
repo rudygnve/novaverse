@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div
       ref={navbar}
-      className="flex flex-row items-center justify-between py-[50px] px-[20px] lg:px-[9%] navbar_container transtion duration-300"
+      className="select-none flex flex-row items-center justify-between py-[30px] px-[20px] lg:px-[9%] navbar_container transtion duration-300"
     >
       <button
         onClick={toggleSearch}
@@ -38,7 +38,7 @@ const Navbar = () => {
       </button>
       <Link
         title="NovaVerse."
-        className="transiton duration-300 text-2xl lg:text-4xl font-bold text-center text-slate-800 logo"
+        className="transiton duration-300 text-2xl lg:text-[45px] font-semibold text-center text-slate-800 logo"
         href="/"
       >
         NovaVerse<span className="text-[#F92A40]">.</span>

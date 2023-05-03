@@ -154,6 +154,25 @@ body {
   top: 0;
 }
 
+.paginate {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.paginate a {
+  padding: 4px 5px;
+  font-size: 20px;
+}
+
+.paginate_active {
+  background-color: rgb(30 41 59);
+  transition: 0.3s;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 800px) {
   .blog_container {
     grid-template-columns: 1fr;
