@@ -11,7 +11,7 @@ const PostCard = ({ item }) => {
       <div className="flex gap-4 flex-col w-full text-center">
         <Link
           className="flex flex-1 relative w-full h-[250px] overflow-hidden rounded-[20px] shadow-2xl lg:h-[500px]"
-          href={`/blog/${item.slug}`}
+          href="#"
         >
           <img
             title={item.title}
@@ -67,7 +67,7 @@ const PostCard = ({ item }) => {
               </Link>
             ))}
           </div>
-          <Link className="flex flex-1" href={`/blog/${item.slug}`}>
+          <Link className="flex flex-1" href="#">
             <h2
               title={item.title}
               className=" text-2xl text-slate-800 font-semibold transiton duration-200 hover:text-[#f92a40] lg:text-3xl"
